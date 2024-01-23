@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hockeys</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- use google font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
 
   <!-- use daisy ul and tailwind link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -37,7 +39,7 @@
 </head>
 
 <body class="font-manrope">
-  <header class="container mx-auto">
+  <header class="container  mx-auto">
     <!-- nav bar -->
     <div class="navbar bg-base-100">
       <div class="navbar-start">
@@ -74,53 +76,47 @@
     </div>
 
     <!-- banner section -->
-    <div class="carousel w-full relative">
-      <!-- slide 1 -->
-      <div id="slide1" class="carousel-item  w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-
-          <a href="#slide4" class="btn btn-circle">❮</a>
 
 
-          <div class=" absolute right-0 bottom-0 top-20 bg-[#131318] p-20 rounded-2xl">
-            <h2 class="font-manrope  text-white font-extrabold">Meet all the heroes from the field</h2>
-            <p class="font-semibold text-red-600 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
-              turpis placerat dolor. Purus urna in sit nullam proin. </p>
-          </div>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+    <div class="relative">
 
-        </div>
-
-      </div>
-
-      <div class="carousel w-full relative">
-        <!-- slide 2 -->
-        <div id="slide1" class="carousel-item w-full">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
           <img src="Images/1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-  
-            <a href="#slide2" class="btn btn-circle">❮</a>
-  
-  
-            <div class=" absolute right-0 bottom-0 top- bg-[#131318] p-20 rounded-2xl">
-              <h2 class="font-manrope text-white font-extrabold">Meet all the heroes from the field</h2>
-              <p class="font-semibold text-red-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
-                turpis placerat dolor. Purus urna in sit nullam proin. </p>
-            </div>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-  
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-  
         </div>
 
+        <!--  -->
 
 
+
+        <div id="slide4" class="carousel-item relative w-full">
+          <img class="rounded-xl" src="Images/banner2.jpeg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div class="  absolute right-0 bottom-8  bg-[#131318] p-14 rounded-2xl">
+          <h2 class="font-manrope  text-white font-extrabold">Meet all the heroes from the field</h2>
+          <p class="font-semibold text-red-600 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+            turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+      </div>
+      <div class=" static lg:absolute right-0 bottom-6 mt-2 bg-[#131318] p-14 rounded-2xl">
+        <h2 class="font-manrope  text-white font-extrabold">Meet all the heroes from the field</h2>
+        <p class="font-semibold text-red-600 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+          turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
     </div>
 
 
+
   </header>
-  <main class="container mx-auto">
+  <main class="container  mx-auto">
     <section class="my-24 bg-[#FFF]">
       <h1 class="text-black font-manrope font-extrabold text-center text-3xl ">Professional Hockeys Club</h1>
       <p class="text-center font-manrope font-medium my-6">Dit amet consectetur. Condimentum dignissim adipiscing
@@ -128,17 +124,22 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-4 my-5 items-center justify-center">
         <!-- card 1 -->
-        <div class="card w-96 bg-base-100 ">
+        <div class="card lg:w-96 bg-base-100 ">
+       <div class="flex item-center justify-center">
           <div class=" text-orange-500 radial-progress " style="--value:87;" role="progressbar ">87%</div>
+        </div>
           <div class="card-body">
             <h2 class="card-title text-center">Prayer Facility</h2>
             <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+          
 
           </div>
         </div>
         <!-- card 2 -->
-        <div class="card w-96 bg-base-100  ">
+        <div class="card lg:w-96 bg-base-100  ">
+          <div class="flex item-center justify-center text-center">
           <div class="  text-green-400 radial-progress " style="--value:95;" role="progressbar ">95%</div>
+        </div>
           <div class="card-body">
             <h2 class="card-title text-center">Experienced Coach</h2>
             <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
@@ -146,8 +147,12 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="card w-96 bg-base-100 ">
+        <div class="card lg:w-96 bg-base-100 ">
+          
+          <div class="flex item-center justify-center">
           <div class=" text-orange-500 radial-progress " style="--value:90;" role="progressbar ">90%</div>
+        </div>
+          
           <div class="card-body">
             <h2 class="card-title text-center">Senior Player</h2>
             <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
@@ -155,8 +160,10 @@
           </div>
         </div>
         <!-- card 4 -->
-        <div class="card w-96 bg-base-100 ">
-          <div class=" text-blue-400 radial-progress " style="--value:80;" role="progressbar ">80%</div>
+        <div class="card lg:w-96 bg-base-100 ">
+         <div class="flex item-center justify-center">
+          <div class=" text-blue-400 radial-progress  " style="--value:80;" role="progressbar ">80%</div>
+         </div>
           <div class="card-body">
             <h2 class="card-title text-center">Training Ground</h2>
             <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
@@ -177,7 +184,7 @@
 
       <!-- junior program -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div class="card w-[573px] bg-base-100  shadow-xl image-full">
+        <div class="card lg:w-[573px] bg-base-100  shadow-xl image-full">
           <figure><img src="Images/2.png" alt="Shoes" /></figure>
           <div class="card-body my-10">
             <h2 class="card-title my-">Junior Program</h2>
@@ -190,7 +197,7 @@
           </div>
         </div>
         <!-- Teenager Program -->
-        <div class="card w-[573px] bg-base-100 bg-opacity-50  shadow-xl image-full">
+        <div class="card lg:w-[573px] bg-base-100 bg-opacity-50  shadow-xl image-full">
           <figure><img src="Images/3.png" alt="Shoes" /></figure>
           <div class="card-body my-10">
             <h2 class="card-title">Teenager Program</h2>
@@ -204,8 +211,7 @@
         </div>
         <!-- Teenager Program -->
         <div class="relative">
-          <div class="hero min-h-screen w-[full] lg:w-[1225px] rounded-3xl"
-            style="background-image: url(Images/4.png);">
+          <div class="hero min-h-screen w-  lg:w-[1225px] rounded-3xl" style="background-image: url(Images/4.png);">
             <div class="hero-overlay bg-opacity-50"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="absolute left-0 bottom-10">
@@ -236,7 +242,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
         <!-- card1 -->
-        <div class=" w-[550px]  bg-base-200">
+        <div class=" lg:w-[550px]  bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img class="w-[180px]" src="images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
             <div>
@@ -262,7 +268,7 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class=" w-[550px]  bg-base-200">
+        <div class=" lg:w-[550px]  bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img class="w-[180px]" src="images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
             <div>
@@ -288,7 +294,7 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class=" w-[550px]  bg-base-200">
+        <div class=" lg:w-[550px]  bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img class="w-[180px]" src="images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
             <div>
@@ -314,7 +320,7 @@
           </div>
         </div>
         <!-- card 4 -->
-        <div class=" w-[550px]  bg-base-200">
+        <div class=" lg:w-[550px]  bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img class="w-[180px]" src="images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
             <div>
@@ -340,7 +346,7 @@
           </div>
         </div>
         <!-- card 5 -->
-        <div class=" w-[550px]  bg-base-200">
+        <div class=" lg:w-[550px]  bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img class="w-[180px]" src="images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
             <div>
@@ -366,7 +372,7 @@
           </div>
         </div>
         <!-- card 6 -->
-        <div class=" w-[550px]  bg-base-200">
+        <div class=" lg:w-[550px]  bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img class="w-[180px]" src="images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
             <div>
@@ -482,105 +488,112 @@
 
       <!-- 1 -->
       <div class="grid grid-cols-1 lg:grid-cols-2">
-        
-          <div class="card w-96 bg-base-100 shadow-xl bg-[#bced6d] my-6 ">
-            <div class="ml-0 mr-[294px]">
-              <figure><img src="Images/Group 1171275317.png" alt="Shoes" /></figure>
-            </div>
-            <div class="card-body">
-              <h2 class="card-title">Phone Number : </h2>
-              <p>(+62) 123-321-543</p>
 
-            </div>
+
+        <div>
+
+        <div class="card w-96 bg-base-100 shadow-xl bg-[#bced6d] my-6 ">
+          <div class="ml-0 mr-[294px]">
+            <figure><img src="Images/Group 1171275317.png" alt="Shoes" /></figure>
           </div>
+          <div class="card-body">
+            <h2 class="card-title">Phone Number : </h2>
+            <p>(+62) 123-321-543</p>
 
-          <div class="card w-96 bg-base-100 shadow-xl bg-[	#fddd5f] my-6">
-            <div class="ml-0 mr-[294px]">
-              <figure><img src="Images/Group 1171275318.png" alt="email" /></figure>
-            </div>
-            <div class="card-body">
-              <h2 class="card-title">Email :
-              </h2>
-              <p> hockeys@support.com</p>
-            </div>
           </div>
-          <div class="card w-96 bg-base-100 shadow-xl bg-[#bced6d] my-6">
-            <div class="ml-0 mr-[294px]">
-              <figure><img src="Images/Group 1171275321.png" alt="location" /></figure>
-            </div>
-            <div class="card-body">
-              <h2 class="card-title">Location :
-              </h2>
-              <p> 152/1 Mohakhali Wireless Gate</p>
+        </div>
 
-            </div>
+        <div class="card w-96 bg-base-100 shadow-xl bg-[	#fddd5f] my-6">
+          <div class="ml-0 mr-[294px]">
+            <figure><img src="Images/Group 1171275318.png" alt="email" /></figure>
           </div>
+          <div class="card-body">
+            <h2 class="card-title">Email :
+            </h2>
+            <p> hockeys@support.com</p>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl bg-[#bced6d] my-6">
+          <div class="ml-0 mr-[294px]">
+            <figure><img src="Images/Group 1171275321.png" alt="location" /></figure>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Location :
+            </h2>
+            <p> 152/1 Mohakhali Wireless Gate</p>
+
+          </div>
+        </div>
+      </div>
 
 
-          <!-- input name -->
+        <!-- input name -->
 
-          <div class="grid grid-cols-2">
-            <div>
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="my-2">
             <label class="form-control w-full max-w-xs">
               <div class="label">
                 <span class="label-text"> your name?</span>
               </div>
               <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
             </label>
-
+            <div class="my-6">
             <div class="label">
               <span class="label-text"> your email?</span>
             </div>
             <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs" />
             </label>
           </div>
+          </div>
 
 
-          <div>
-          <div class="label">
-            <span class="label-text"> subject?</span>
-          </div>
-          <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs" />
-          </label>
+          <div class="my-2">
+            <div class="label">
+              <span class="label-text"> subject?</span>
+            </div>
+            <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs" />
+            </label>
 
-          <div class="label">
-            <span class="label-text"> phone number?</span>
+            <div class="my-6">
+
+            <div class="label">
+              <span class="label-text"> phone number?</span>
+            </div>
+            <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+            </label>
           </div>
-          <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
-          </label>
-        </div>
-        
-        <label class="form-control">
-          <div class="label">
-            <span class="label-text">Message</span>
-            
-          </div>
-          <textarea class="textarea textarea-bordered h-[370px]" placeholder="message"></textarea>
          
-        </label>
+          </div>
+          
+            
+            <label class="form-control">
+              <div class="label">
+                <span class="label-text">Message</span>
+              </div>
+          
+  
+            </label>
+        
 
-
-        </div>
-
-
+          </div>
   
 
       </div>
 
-      
+
       <div class="my-12 ">
         <h2 class="text-center text-[#131318] font-extrabold text-2xl">Social Media</h2>
       </div>
-        
-          <div class=" gap-4 flex justify-center items-center">
-            <a><i class="fa-brands fa-facebook"></i></a>
-            <a><i class="fa-brands fa-twitter"></i></a>
-            <a><i class="fa-brands fa-instagram"></i></a>
-            <a><i class="fa-brands fa-github"></i></a>
-          </div>
-       
-        
-     
+
+      <div class=" gap-4 flex justify-center items-center">
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-twitter"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-github"></i></a>
+      </div>
+
+
+
 
 
 
@@ -595,43 +608,49 @@
   <!-- footer section -->
   <footer class="footer p-10 lg:p-10 bg-neutral text-neutral-content">
     <nav>
-      <header class="footer-title">Get In Touch</header> 
-     <p>Dit amet consectetur. Condimentum <br>  adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
-   <div class="flex gap-2">
-    <img src="Images/Frame (4).png" alt="">
-    <h4> hockeys@support.com</h4>
-   
-   </div>
-  <div class="flex gap-2">
-    <img src="Images/Frame (5).png" alt="">
-    <h3>(+62) 123-321-543</h3>
-  </div>
-    </nav> 
-    
-    <nav>
-      <header class="footer-title">Company</header> 
-      <a class="link link-hover">About us </a>
-      <a class="link link-hover">Leadership</a>
-      <a class="link link-hover"> Careers</a>
-      <a class="link link-hover">News & Article</a>
-      <a class="link link-hover">Legal Notice</a>
-    </nav> 
-    <nav>
-      <header class="footer-title">Support</header> 
-      <a class="link link-hover">Help Center </a>
-      <a class="link link-hover"> FAQ</a>
-      <a class="link link-hover"> Ticket Support</a>
-      <a class="link link-hover">Press kit</a>
-    </nav> 
-  
-    <nav>
-      <header class="footer-title">Services</header> 
-      <a class="link link-hover">Academy  </a>
-      <a class="link link-hover">  Group Lesson</a>
-      <a class="link link-hover">Private Lesson</a>
-      <a class="link link-hover"> Hockeys for kids</a>
-      <a class="link link-hover"> Hockeys for Adult</a>
+      <header class="footer-title">Get In Touch</header>
+      <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam
+        proin. </p>
+      <div class="flex gap-2">
+        <img src="Images/Frame (4).png" alt="">
+        <h4> hockeys@support.com</h4>
+
+      </div>
+      <div class="flex gap-2">
+        <img src="Images/Frame (5).png" alt="">
+        <h3>(+62) 123-321-543</h3>
+      </div>
     </nav>
+    <div class="grid grid-cols-2 lg:grid-cols-2 gap-10 ">
+      <nav>
+        <header class="footer-title">Company</header>
+        <h1>About us</h1>
+        <h1>Leadership</h1>
+        <h1>Careers</h1>
+        <h1>News & Article</h1>
+        <h1>Legal Notice</h1>
+        
+      </nav>
+      <nav>
+        <header class="footer-title">Support</header>
+        <h2>help center</h2>
+        <h2>FAQ</h2>
+        <h2>Ticket Support</h2>
+       <h2>Press kit</h2>
+        
+      </nav>
+    </div>
+  
+      <nav class="lg:flex-col lg:justify-center lg:items-center lg:ml-0 ml-20">
+        <header class="footer-title">Services</header>
+        <h1>Help academy</h1>
+        <h1>Group Lesson</h1>
+        <h3>Private lession</h3>
+        <h3>Hockeys for kids</h3>
+        <h3>Hockeys for Adult</h3>
+
+      </nav>
+   
   </footer>
 </body>
 
